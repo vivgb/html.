@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img src = "two_men_kissing" id="imagem" width="400" hidden>
+
+        <p> 
+            <input type="button" id="botao" value="Mostrar" onclick="hiddenshow()">
+        </p>
+        
+    </center>
+    <script>
+        function hiddenshow(){
+
+            var img = document.getElementById("imagem")
+            var botao = document.getElementById("botao")
+            if (img.hidden) {
+                img.hidden = false
+                botao.value = "Ocultar"
+            } else {
+                img.hidden = true
+                botao.value = "Mostrar"
+            }
+            
+        }
+    </script>
+</body>
+
+
+</html>    
